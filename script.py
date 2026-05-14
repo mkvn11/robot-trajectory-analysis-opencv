@@ -123,7 +123,7 @@ while True:
             # Indicateur Rouge = On utilise la mémoire (un tag est caché)
             cv2.rectangle(frame, (10, 10), (30, 30), (0, 0, 255), -1)
 
-        # --- ETAPE 2 : TRACKING (Si on a une matrice, même ancienne) ---
+        # -- ETAPE 2 : TRACKING (Si on a une matrice, même ancienne) --
         if last_homography is not None:
             # 1. On dessine les axes qui "collent" à la table
             draw_visuals(frame, last_inverse)
